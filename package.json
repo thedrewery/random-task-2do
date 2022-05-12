@@ -1,0 +1,29 @@
+{
+  "name": "random-task-2do",
+  "version": "1.0.0",
+  "description": "personal task management app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "start-dev": "nodemon server/server.js"
+  },
+  "author": "Drew Pomatti",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.70.0",
+    "eslint": "^7.17.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.6",
+    "node-postgres": "^0.6.2",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3",
+    "postgres": "^1.0.2",
+    "node": "17.2.0"
+  }
+}
