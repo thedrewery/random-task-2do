@@ -1,15 +1,23 @@
-import { render } from "react-dom";
 import { Component } from "react";
-import Task from "./Task"
+import TaskController from "../server/controllers/taskController";
+import TaskItem from "./TaskItem"
 
 const TaskList = () => {
+        return (
+            <div className="taskListMain">
+                <div className="header">
+                    <form>
+                        <input
+                            placeHolder="Task"
+                            onChange={(e) => this.props.item}
+                        />
+                        <button type="retrieve" onClick={(e) => TaskController.getTasks}> Get Tasks </button>
+                        <button type="submit" onClick={(items) => TaskController.postTask}> Add Task </button>
+                    </form>
+                </div>
+            </div>
+        )
+    }
 
-    this.state = {
-    taskItems: []
-}
-    return (
-        <Task />
-    )
-}
 
 export default TaskList;
